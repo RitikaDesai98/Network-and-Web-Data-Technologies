@@ -1,0 +1,64 @@
+{
+  "buildings": [
+    {
+      "id": 463174,
+      "name": "Cathedral of Learning",
+      "address": "4200 Fifth Avenue",
+      "zipcode": 15260
+    },
+    {
+      "id": 269360,
+      "name": "Wesley Posvar",
+      "address": "230 S. Bouquet Street",
+      "zipcode": 15213
+    },
+    {
+      "id": 898470,
+      "name": "Barco Law Building",
+      "address": "3900 Forbes Avenue",
+      "zipcode": 15260
+    },
+    {
+      "id": 537714,
+      "name": "Sennott Square",
+      "address": "210 S. Bouquet Street",
+      "zipcode": 15213
+    },
+    {
+      "id": 633352,
+      "name": "Clapp Hall",
+      "address": "4249 Fifth Avenue",
+      "zipcode": 15260
+    },
+    {
+      "id": 765069,
+      "name": "Music Building",
+      "address": "4337 Fifth Avenue",
+      "zipcode": 15260
+    },
+    {
+      "id": 985124,
+      "name": "IS Building",
+      "address": "135 N. Bellefield Avenue",
+      "zipcode": 15213
+    },
+    {
+      "id": 181234,
+      "name": "Swanson School of Engineering",
+      "address": "3700 O'Hara Street",
+      "zipcode": 15261
+    },
+    {
+      "id": 592512,
+      "name": "Langley Hall",
+      "address": "5th and Ruskin Avenue",
+      "zipcode": 15260
+    },
+    {
+      "id": 794429,
+      "name": "Stephen Foster Memorial",
+      "address": "4301 Forbes Avenue",
+      "zipcode": 15213
+    }
+  ]
+}

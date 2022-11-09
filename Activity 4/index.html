@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Activity 4</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Hi Hi Hi!</h1>
+
+    <p>
+      Fill out the form below to see how localstorage stores the values you
+      input. Make sure to type in a
+      <b>correct email, 9 digit SSN, 10 digit phone number</b> otherwise be
+      ready to get yelled at by Javascript alerts!
+    </p>
+    <form name="contact-form" method="post">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <input name="name" type="text" placeholder="Name" />
+        <input name="email" type="email" placeholder="Email" /><br />
+        Date of birth:
+        <input name="dob" type="date" />
+        <input name="ssn" type="number" placeholder="SSN" /><br />
+        <input type="radio" name="phone_type" value="Mobile" />
+        Mobile
+        <input type="radio" id="office" name="phone_type" value="Office" />
+        Office
+        <input
+          name="phone-number"
+          type="number"
+          placeholder="Phone Number"
+        /><br />
+        <input type="button" value="Submit" onclick="validateForm()" />
+      </fieldset>
+    </form>
+    Immediate Result:
+    <ul>
+      <li id="name">Name</li>
+      <li id="email">Email</li>
+      <li id="dob">DOB</li>
+      <li id="ssn">SSN</li>
+      <li id="phone_number">Phone Number</li>
+    </ul>
+
+    OnPageLoad Result:
+    <ul>
+      <li id="plname">Name</li>
+      <li id="plemail">Email</li>
+      <li id="pldob">DOB</li>
+      <li id="plssn">SSN</li>
+      <li id="plphone_number">Phone Number</li>
+    </ul>
+
+    <div
+      class="glitchButton"
+      style="position: fixed; top: 20px; right: 20px"
+    ></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

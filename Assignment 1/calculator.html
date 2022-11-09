@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <nav class="leftnavbar">
+        <div class="profile">
+          <img
+            alt="profile-image"
+            class="profileimg"
+            style="vertical-align: middle"
+            src="https://cdn.glitch.global/8f499c43-e448-4ea3-82e3-c1768a82cbed/IMG_0395.JPG?v=1663296019574"
+          />
+          <span style="margin-left: 10px; vertical-align: middle"
+            >Ritika Desai</span
+          >
+        </div>
+        <div class="navbar">
+          <ul>
+            <li class="navitem">
+              <img
+                alt="home"
+                class="navimage"
+                src="https://cdn.glitch.global/8f499c43-e448-4ea3-82e3-c1768a82cbed/home.svg?v=1663294805302"
+              /><span><a href="home.html">Home</a></span>
+            </li>
+            <li class="navitem">
+              <img
+                alt="tasks"
+                class="navimage"
+                src="https://cdn.glitch.global/8f499c43-e448-4ea3-82e3-c1768a82cbed/noteblock.svg?v=1663294836441"
+              /><span><a href="task.html">Tasks</a></span>
+            </li>
+            <li class="navitem">
+              <img
+                alt="budget"
+                class="navimage"
+                src="https://cdn.glitch.global/8f499c43-e448-4ea3-82e3-c1768a82cbed/dollar.svg?v=1663294793152"
+              /><span><a href="budget.html">Budget</a></span>
+            </li>
+            <li class="navitem">
+              <img
+                alt="recipe"
+                class="navimage"
+                src="https://cdn.glitch.global/8f499c43-e448-4ea3-82e3-c1768a82cbed/burger.svg?v=1663671841552"
+              /><span><a href="recipe.html">Recipes</a></span>
+            </li>
+            <li class="navitem active">
+              <img
+                alt="calculator"
+                class="navimage"
+                src="https://cdn.glitch.global/8f499c43-e448-4ea3-82e3-c1768a82cbed/calculator.svg?v=1663671846477"
+              /><span><a href="calculator.html">Calculator</a></span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section>
+        <header><h1>Calculator</h1></header>
+        <div class="calculator">
+          <input
+            type="text"
+            id="screen-value"
+            class="screen"
+            style="text-align: right"
+          />
+          <div class="buttons">
+            <input
+              type="button"
+              value="7"
+              class="button"
+              onclick="display('7')"
+            />
+            <input
+              type="button"
+              value="8"
+              class="button"
+              onclick="display('8')"
+            />
+            <input
+              type="button"
+              value="9"
+              class="button"
+              onclick="display('9')"
+            />
+            <input
+              type="button"
+              value="/"
+              class="operator"
+              onclick="display('/')"
+            />
+            <input
+              type="button"
+              value="4"
+              class="button"
+              onclick="display('4')"
+            />
+            <input
+              type="button"
+              value="5"
+              class="button"
+              onclick="display('5')"
+            />
+            <input
+              type="button"
+              value="6"
+              class="button"
+              onclick="display('6')"
+            />
+            <input
+              type="button"
+              value="*"
+              class="operator"
+              onclick="display('*')"
+            />
+            <input
+              type="button"
+              value="1"
+              class="button"
+              onclick="display('1')"
+            />
+            <input
+              type="button"
+              value="2"
+              class="button"
+              onclick="display('2')"
+            />
+            <input
+              type="button"
+              value="3"
+              class="button"
+              onclick="display('3')"
+            />
+            <input
+              type="button"
+              value="-"
+              class="operator"
+              onclick="display('-')"
+            />
+            <input
+              type="button"
+              value="0"
+              class="button"
+              onclick="display('0')"
+            />
+            <input
+              type="button"
+              value="."
+              class="button"
+              onclick="display('.')"
+            />
+            <input
+              type="button"
+              value="="
+              class="button equal-sign"
+              onclick="calculate()"
+            />
+            <input
+              type="button"
+              value="+"
+              class="operator"
+              onclick="display('+')"
+            />
+          </div>
+          <input
+            type="button"
+            value="Clear All"
+            onclick="clearScreen()"
+            class="clear"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <pre>Last Update on <time datetime="2022-09-20 23:59">09-20-2022 23:59</time>
+Copyrights Ritika Desai
+    Some sort of footer text is inserted here
+    </pre>
+    </footer>
+  </body>
+</html>

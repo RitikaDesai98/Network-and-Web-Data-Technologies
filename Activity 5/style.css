@@ -1,0 +1,73 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  margin: 2em;
+  background-color: aliceblue;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 35px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+p {
+  font-size: 16.5px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+ul li {
+  padding-left: 2rem;
+  background-image: url(https://cdn.glitch.global/b3e52a17-c193-4796-946c-ed5e397f7be2/noun-cupcake-5151140.svg?v=1662441118299);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+.header-image {
+  max-width: 100%;
+  border: 2px solid #7ebdc2;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("https://cdn.glitch.global/b3e52a17-c193-4796-946c-ed5e397f7be2/melissia-ohol-7dhnDG46L2E-unsplash.jpg?v=1662437136094");
+  background-size: cover;
+  padding-top: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

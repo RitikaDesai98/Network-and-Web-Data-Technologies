@@ -1,0 +1,28 @@
+{
+  "name": "github-passport-example",
+  "version": "0.0.1",
+  "description": "an example app implementing github oauth with passport",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "connect-ensure-login": "^0.1.1", 
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "express-session": "^1.15.1",
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "github",
+    "oauth",
+    "passport"
+  ],
+  "license": "MIT"
+}

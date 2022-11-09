@@ -1,0 +1,124 @@
+{
+  "students": [
+    {
+      "id": 523169,
+      "first_name": "Harvey",
+      "last_name": "Specter",
+      "courses": [
+        {
+          "course1": "Ethics Law",
+          "course2": "Contracts Law",
+          "course3": "Intellectual Law"
+        }
+      ]
+    },
+    {
+      "id": 425007,
+      "first_name": "James",
+      "last_name": "Bond",
+      "courses": [
+        {
+          "course1": "Network and Web Data Technologies",
+          "course2": "Machine Learning",
+          "course3": "Data Mining"
+        }
+      ]
+    },
+    {
+      "id": 786541,
+      "first_name": "Jason",
+      "last_name": "Bourne",
+      "courses": [
+        {
+          "course1": "Software Engineering",
+          "course2": "Information Visualization",
+          "course3": "Probability Theory"
+        }
+      ]
+    },
+    {
+      "id": 384595,
+      "first_name": "Sherlock",
+      "last_name": "Holmes",
+      "courses": [
+        {
+          "course1": "Financial Accounting",
+          "course2": "Economics",
+          "course3": "Supply Chain Management"
+        }
+      ]
+    },
+    {
+      "id": 602619,
+      "first_name": "Donna",
+      "last_name": "Paulsen",
+      "courses": [
+        {
+          "course1": "Psychology",
+          "course2": "Cross Culture Psych",
+          "course3": "Attitudes and Attitude Change"
+        }
+      ]
+    },
+    {
+      "id": 289447,
+      "first_name": "Rachel",
+      "last_name": "Green",
+      "courses": [
+        {
+          "course1": "Drawing Studio",
+          "course2": "Painting Studio",
+          "course3": "Sculpture Design"
+        }
+      ]
+    },
+    {
+      "id": 192240,
+      "first_name": "Emma",
+      "last_name": "Stone",
+      "courses": [
+        {
+          "course1": "Theatre Arts",
+          "course2": "Voice and Movements",
+          "course3": "Play Writing"
+        }
+      ]
+    },
+    {
+      "id": 992644,
+      "first_name": "Taylor",
+      "last_name": "Swift",
+      "courses": [
+        {
+          "course1": "Musical Theatre",
+          "course2": "Violin",
+          "course3": "Song Writing"
+        }
+      ]
+    },
+    {
+      "id": 891263,
+      "first_name": "Ethan",
+      "last_name": "Hunt",
+      "courses": [
+        {
+          "course1": "Physics",
+          "course2": "Astronomy",
+          "course3": "Stellar Structure"
+        }
+      ]
+    },
+    {
+      "id": 411686,
+      "first_name": "Walter",
+      "last_name": "White",
+      "courses": [
+        {
+          "course1": "Organic Chemistry",
+          "course2": "Quantum Mechanics",
+          "course3": "Thermo-dynamics"
+        }
+      ]
+    }
+  ]
+}

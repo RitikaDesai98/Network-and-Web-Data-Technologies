@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f3f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+.alert {
+  border-radius: 10px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+span.Income {
+  color: #BF7E78;
+}
+
+span.Housing {
+  color: #8C586B;
+}
+
+span.Grocery {
+  color: #8C4646;
+}
+
+span.Miscellaneous {
+  color: #593248;
+}
+
+.list li.Income {
+  border: 1px solid #BF7E78;
+}
+
+.list li.Housing {
+  border: 1px solid #8C586B;
+}
+
+.list li.Grocery {
+  border: 1px solid #8C4646;
+}
+
+.list li.Miscellaneous {
+  border: 1px solid #593248;
+} 
+
+.delete-btn {
+  background-color: transparent;
+  border: 0;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(1450%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+  .delete-btn {
+    transform: translate(1015%, -50%);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .delete-btn {
+    transform: translate(1450%, -50%);
+  }
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.add-button {
+  background-color: #564e58;
+  border-radius: 10px;
+  color: #ffffff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}

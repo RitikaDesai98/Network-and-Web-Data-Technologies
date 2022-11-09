@@ -1,0 +1,26 @@
+/* Use CSS to style your page */
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+li {
+  border-radius: 10px;
+  background-color: #F3F1F8;
+  display: relative;
+  align-items: center;
+  margin: 10px;
+}
+
+img{
+  margin: 10px 20px 10px 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+  border: 2px solid #555555;
+}
