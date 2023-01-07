@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CRUDy Book Browser</title>
+    <meta name="description" content="A cool thing made with Glitch" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="container-fluid">
+    <a href="/" class="btn btn-default">
+      <i class="bi bi-chevron-left"></i>
+    </a>
+    <h1>Building Detail</h1>
+    <h5>Building ID: <%= building.building_id %></h5>
+    <h5>Name: <%= building.name %></h5>
+    <h5>Address: <%= building.address %></h5>
+    <h5>Zipcode: <%= building.zipcode %></h5> 
+  </body>
+</html>
+

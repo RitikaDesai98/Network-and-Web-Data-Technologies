@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CRUDy Book Browser</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+       <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="container-fluid">
+    <a href="/" class="btn btn-default">
+      <i class="bi bi-chevron-left"></i>
+    </a>
+    <h1>
+      Courses 
+    </h1>
+    <a href="add-course">
+        Add a Course
+      </a>
+    <% if (courses) { %>
+    <table class="table">
+      <tbody><tr><th>ID</th><th>Name</th><th>Instructor</th><th>Day</th><th>Time</th><th>Building</th><th>Edit</th><th>Delete</th></tr>
+        <% courses.forEach(function(course){ %>
+        <tr>
+          <td><a href = "/api/course/<%=course.course_id %>" ><%=course.course_id %></a></td>
+          <td><%= course.name %></td>
+          <td><%= course.instructor %></td>
+          <td><%= course.meeting_day %></td>
+          <td><%= course.meeting_time %></td>
+            <td><a href = "/api/building/<%=course.building %>" ><%=course.building %></a></td>
+          <td>
+                            <form action="/api/edit-course/<%= course.id %>" method="GET">
+                                <button type="submit" class="btn btn-default">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                            </form>
+                        </td>
+            <td><form action="/api/course/<%= course.id %>?_method=DELETE" method="POST">
+              
+        <button type="submit" class="btn btn-default">
+          <i class="bi bi-trash">      </form> </td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <% } else { %>
+    <p>There are no students in the database.</p>
+    <% } %>
+      
+      <br><br><br>
+  </body>
+</html>
