@@ -1,0 +1,86 @@
+:root {
+  --colour1: #00203fff;
+  --colour2: #adefd1ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--colour1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+
+h4 {
+  color: #d4cbcb;
+  margin-left: 1em;
+}
+
+#profileContainer {
+  background-color: #d4cbcb;
+  margin: auto;
+  margin-top: 2em;
+  width: 50vw;
+  height: 300px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+#profilePicture {
+  margin: auto;
+  margin-top: 1em;
+  color: red;
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-color: var(--colour1);
+  border-width: 4px;
+  border-radius: 50%;
+  background-image: url(https://cdn.glitch.global/c939f23d-8cc0-4a93-a673-eb941a9369b8/Untitled.png?v=1670710893293);
+  background-size: cover;
+  background-position: center;
+}
+
+#profileInfo {
+  margin: auto;
+  margin-top: 2em;
+  width: 70%;
+  height: 30%;
+  background-color: var(--colour1);
+  border-style: solid;
+  border-color: #d6b892;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+#profileInfo > p {
+  margin: 1em 2em 1em 2em;
+  color: white;
+  color: #d4cbcb;
+}
+
+#profileInfo > p > span {
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  #profileContainer {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  #profileContainer {
+    width: 90vw;
+  }
+}

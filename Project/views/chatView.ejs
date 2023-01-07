@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script src="/script.js" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Chat Website</title>
+  </head>
+  <body class="container-fluid">
+    <div class="sidebar col-4 col-xs-5 col-sm-5 col-md-6 col-lg-3 h-80">
+      <div class="header">
+        <div class="avatar">
+          <img src="https://cdn.glitch.global/c939f23d-8cc0-4a93-a673-eb941a9369b8/avatar.png?v=1669380775329" alt="" class="img-fluid"/>
+        </div>
+        <div class="profile-info">
+          <h4><%= user.username %></h4>
+          <p><%= user.email %></p>
+        </div>
+      </div>
+<!-- This inpput had no form or action, I tried to copy the one from searchUser.ejs but it still didn't work -->
+<!--       <div class="sidebar-search">
+        <div class="sidebar-search-container">
+          <img src="https://cdn.glitch.global/c939f23d-8cc0-4a93-a673-eb941a9369b8/search-solid.svg?v=1669380840035" alt="" class="img-fluid"/>
+          <input type="text" class="text-muted" placeholder="Search" />
+        </div>
+      </div> -->
+<!--         <form method = "POST" action = "/chat/search-user">
+      <div class="sidebar-search">
+        <div class="sidebar-search-container">          
+              <input type="text" id="user_email" name="user_email" placeholder="Search" required />
+           <button type="submit" class = "search-button">
+             <img src="https://cdn.glitch.global/c939f23d-8cc0-4a93-a673-eb941a9369b8/search-solid.svg?v=1669380840035" alt="" />
+            </button>           
+        </div>
+      </div>
+          </form> -->
+      <div class="sidebar-chats">
+                            <% if (chat_list) { 
+               chat_list.forEach(function(chat){ 
+                 
+               %>
+        <a href="/chat/view-chat/<%=chat.id%>" class="sidebar-chat">
+          <div class="chat-avatar">
+            <img src="https://cdn.glitch.global/c939f23d-8cc0-4a93-a673-eb941a9369b8/avatar.png?v=1669380775329" alt="" class="img-fluid"/>
+          </div>          
+              <div class="chat-info">
+               <h4><%= chat.username %></h4>                           
+            <p>Last Message</p>
+          </div>
+          <div class="time">
+            <p>22:20 pm</p>
+          </div>
+                
+        </a>   
+          <% })}
+             else { %>
+             <p>
+               No chats
+            </p>
+              <% } %>
+      </div>
+    </div>
+    <div class="message-container col-8 col-xs-7 col-sm-7 col-md-6 col-lg-9">
+      <div class="header">
+        <div class="chat-title">
+          <div class="avatar">
+            <img src="https://cdn.glitch.global/c939f23d-8cc0-4a93-a673-eb941a9369b8/avatar.png?v=1669380775329" alt="" class="img-fluid"/>
+          </div>
+          <div class="message-header-content">
+            <h4 style="font-size: 2.5vw;"><%= friend.username %></h4>
+            <p>online</p>
+          </div>
+        </div>        
+      </div>
+      <div class="message-content h-80" id="message-container">
+        <% if (message_list) %>
+          <% message_list.forEach(function(message){ 
+             if (message.sender == user.id){
+             %>            
+        <div class="chat-message chat-sent d-flex align-items-center">
+          <%= message.text %> <span class="chat-timestamp"><%= message.createdAt.toLocaleString() %></span>
+          <form action="/chat/message/<%= message.id %>?_method=DELETE" method="POST">
+          <button type="submit" title="Delete this message">🗑️</button></form>
+        </div>            
+        <% }else{ %>
+       <div class="chat-message d-flex align-items-center">
+          <%= message.text %> <span class="chat-timestamp"><%= message.createdAt.toLocaleString()  %></span> 
+        </div>
+           <% } }) %>
+        </div>
+            
+      <form action="/chat/<%= friend.id %>" method = "POST">
+      <div class="message-footer fixed-bottom float-end">
+        <input type="text" name="msg" id="msg" placeholder="Type a message" required />
+        <button type="submit" class="send-message">
+          Send 
+        </button>
+      </div>
+      </form>
+
+    </div>
+  </body>
+</html>
